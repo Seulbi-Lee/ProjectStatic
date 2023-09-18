@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* common */
+:root{
+  --color-white: #ffffff;
+  --color-white-gray: #f4f4f6;
+  --color-dark-gray: #373B45;
+  --color-black: #141824;
+  --font-xl: 22px;
+  --font-l: 18px;
+  --font-m: 16px;
+  --font-s: 15px;
+  --font-xs: 12px;
+}
+.bg-white{
+  background-color: var(--color-white);
+}
+.bg-white-gray{
+  background-color: var(--color-white-gray);
+}
+.bg-black{
+  background-color: var(--color-black);
+}
+.text-white{
+  color: var(--color-white);
+}
+.text-white-gray{
+  color: var(--color-white-gray);
+}
+.text-blank{
+  color: var(--color-black);
+}
+[class ^= "container"]{
+  width: 100%;
+}
+.container-inner{
+  width: 100%;
+  max-width: 1318px;
+  margin: 0 auto;
+}
+.h2-title{
+  font-size: 44px;
+  transition: all .3s;
+}
+.h3-title{
+  font-size: 35px;
+  transition: all .3s;
+}
+.h5-title{
+  font-size: var(--font-l);
+}
+@media screen and (max-width: 769px) {
+  .h2-title{
+    font-size: 30px;
+  }
+  .h3-title{
+    font-size: 26px;
+  }
+}
+
+/* s:header */
+.header{
+  position: relative;
+  width: 100%;
+  padding: 32px 24px;
+  background-color: var(--color-black);
+}
+.haeder-nav{
+  display: flex;
+  justify-content: space-between;
+  height: 92px;
+}
+.header-menu{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.header-menu .header-menu-item{
+  position: relative;
+}
+.header-menu .header-menu-item a{
+  font-size: 14px;
+  color: var(--color-white-gray);
+}
+.header-dropdown{
+  position: absolute;
+}
+.header-util{
+  display: flex;
+  justify-content: flex-end;  
+}
+.header-util a{
+  color: var(--color-white-gray);
+}
+.icon-more svg path{
+  fill: var(--color-white-gray);
+}
+.container-search{
+
+}
+
+@media screen and (min-width: 770px) {
+}
+@media screen and (max-width: 769px) {
+  .header-menu{
+    display: none;
+  }
+}
+/* e:header */
+
+/* s:product */
+.product-content{
+  
+}
+.product-list{
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 770px) {
+}
+@media screen and (max-width: 769px) {
+  .product-list{
+    flex-direction: column;
+  }
+}
+/* e:product */
+
+/* s:post */
+.post-content{
+  
+}
+.post-list{
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 770px) {
+}
+@media screen and (max-width: 769px) {
+  .post-list{
+    flex-direction: column;
+  }
+}
+/* e:post */
+

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Helvetica Neue LT W05_65 Medium";
+  font-style: normal;
+  font-weight: 100;
+  src: url(//resource/font/Helvetica-Neue-LT-Com-65-Medium.ttf) format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+html, body {
+  font-family: "Helvetica Neue LT W05_65 Medium", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1;
+}
+@media screen and (max-width: 769px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, span, strong, em, i {
+  font-style: normal;
+  line-height: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input, button{
+  background-color: transparent;
+  border: none;
+}
+
+img{
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  font-size: 0;
+  color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 769px) {
+  .pc-only{
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) {
+  .mo-only{
+    display: none;
+  }
+}
