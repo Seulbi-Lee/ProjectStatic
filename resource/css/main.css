@@ -3,6 +3,7 @@
 :root{
   --color-white: #ffffff;
   --color-white-gray: #f4f4f6;
+  --color-light-gray: #d8d8df;
   --color-dark-gray: #373B45;
   --color-black: #141824;
   --font-xl: 22px;
@@ -29,8 +30,25 @@
 .text-blank{
   color: var(--color-black);
 }
-[class ^= "container"]{
+.text-xl{
+  font-size: var(--font-xl);
+}
+.text-l{
+  font-size: var(--font-l);
+}
+.text-m{
+  font-size: var(--font-m);
+}
+.text-s{
+  font-size: var(--font-s);
+}
+.text-xs{
+  font-size: var(--font-xs);
+}
+.container-outer{
+  position: relative;
   width: 100%;
+  padding: 98px;
 }
 .container-inner{
   width: 100%;
@@ -38,15 +56,20 @@
   margin: 0 auto;
 }
 .h2-title{
+  text-align: center;
   font-size: 44px;
   transition: all .3s;
+  font-weight: 400;
 }
 .h3-title{
+  text-align: center;
   font-size: 35px;
   transition: all .3s;
+  font-weight: 400;
 }
 .h5-title{
   font-size: var(--font-l);
+  font-weight: 500;
 }
 @media screen and (max-width: 769px) {
   .h2-title{
@@ -109,6 +132,9 @@
 /* e:header */
 
 /* s:product */
+.product .h3-title{
+  margin-bottom: 98px;
+}
 .product-content{
   
 }
@@ -117,7 +143,19 @@
   justify-content: flex-start;
   gap: 3rem;
 }
-
+.product-item-inner .img-svg{
+  filter: invert(190%) sepia(0%) saturate(0%) hue-rotate(0) brightness(90%) contrast(100%);
+  transition: all .5s;
+}
+.product-item-inner:hover .img-svg{
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(100%);
+}
+.product-item-inner .img-photo{
+  transition: all .5s;
+}
+.product-item-inner:hover .img-photo{
+  filter:grayscale();
+}
 @media screen and (min-width: 770px) {
 }
 @media screen and (max-width: 769px) {
@@ -128,6 +166,9 @@
 /* e:product */
 
 /* s:post */
+.post .h3-title{
+  margin-bottom: 56px;
+}
 .post-content{
   
 }
@@ -146,3 +187,20 @@
 }
 /* e:post */
 
+/* s:guide */
+.guide-content{
+  padding:0 130px;
+  box-sizing: border-box;
+}
+.guide-list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.guide-list .guide-item{
+  width: calc(100% / 3);
+  padding: 48px 32px;
+  border: 1px solid var(--color-light-gray);
+  box-sizing: border-box;
+}
+/* e:guide */
