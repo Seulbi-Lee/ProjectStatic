@@ -4,19 +4,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
   function init(){
     headerSticky()
     searchOption()
-    infinitSlide()
+    mobileMenu()
   }
 
-  // infinit slide
-  function infinitSlide(){
-    let slide = document.querySelector('.visual-icon-list')
-    let slideItem = document.querySelectorAll('.visual-icon-item')
+  function mobileMenu(){
+    let btnOpen = document.getElementById('btnOpenMobile')
+    let mobileMenu = document.getElementById('MobileMenu')
 
-    for(let item of slideItem){
-      console.log(item.innerHTML)
-    }
+    btnOpen.addEventListener('click', ()=>{
+      mobileMenu.classList.add('active')
+    })
+
+    document.addEventListener('click', (e)=>{
+      if(e.target === mobileMenu){
+        mobileMenu.classList.remove('active')
+      }
+    })
   }
-  
+
   // search option
   function searchOption(){
     let selected = document.getElementById('searchSelected')
@@ -39,13 +44,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         optionList.style.height = 0;
       })
     }
-
-    // document.addEventListener('click', function(e){
-    //   e.preventDefault = true;
-    //   if(optionList.clientHeight !== 0){
-    //     console.log(e.target, e.target.classList.contains('.select-option'))
-    //   }
-    // })
   }
 
   // header sticky
@@ -61,5 +59,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
   }
 
-//E
 })
+
+// modal
+function modalOpen(){
+  document.querySelector('.modal-product').style.display = 'block'
+}
+function modalClose(){
+  document.querySelector('.modal-product').style.display = 'none'
+}

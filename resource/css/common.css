@@ -7,7 +7,7 @@
   src: url(//resource/font/Helvetica-Neue-LT-Com-65-Medium.ttf) format("ttf");
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   border: 0;
@@ -95,3 +95,4 @@ img{
     display: none;
   }
 }
+
