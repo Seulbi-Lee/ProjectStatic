@@ -399,12 +399,18 @@
   animation-duration: 0;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
+  animation-play-state: running;
 }
 .animation-right{
   animation: slideRight 20s infinite;
   animation-duration: 0;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
+  animation-play-state: running;
+}
+.visual-icon-box:hover .animation-right,
+.visual-icon-box:hover .animation-left{
+  animation-play-state: paused;
 }
 @keyframes slideLeft {
   0%{
