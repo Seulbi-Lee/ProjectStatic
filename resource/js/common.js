@@ -136,9 +136,9 @@ const icons = [{
   "name": "houseplants",
   "num" : 1,
   "black":"https://thenounproject.com/api/private/icons/5579024/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0",
-  "pink":"",
-  "blue":"",
-  "green":"",
+  "pink":"https://thenounproject.com/api/private/icons/5579024/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23FF59B9&foregroundOpacity=1&imageFormat=png&rotation=0",
+  "blue":"https://thenounproject.com/api/private/icons/5579024/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%233B6BF9&foregroundOpacity=1&imageFormat=png&rotation=0",
+  "green":"https://thenounproject.com/api/private/icons/5579024/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23007435&foregroundOpacity=1&imageFormat=png&rotation=0",
 },
 {
   "name": "houseplants",
